@@ -1,0 +1,38 @@
+/* Your existing styles */
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+  
+  .cart-item {
+    margin: 10px;
+  }
+  
+  .total-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .total, .checkout {
+    width: 48%; /* Adjust as needed */
+  }
+  
+  /* Media query for smaller screens, e.g., mobile devices */
+  @media screen and (max-width: 600px) {
+    .cart-container {
+      flex-direction: column;
+    }
+  
+    .total-section {
+      flex-direction: column;
+    }
+  
+    .total, .checkout {
+      width: 100%;
+    }
+  }
+  
